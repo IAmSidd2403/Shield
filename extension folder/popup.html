@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Phishing Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 15px;
+            width: 300px; /* Increased width for better UI */
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .toggle {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #status {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 13px;
+            color: #444;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .no-threat {
+            color: green;
+        }
+
+        .threat-found {
+            color: red;
+        }
+
+        #loading {
+            font-size: 14px;
+            color: #777;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <h1>Phishing Detector</h1>
+
+    <div id="loading">Loading...</div> <!-- Loading indicator -->
+
+    <div class="toggle">
+        <label>
+            <input type="checkbox" id="toggleProtection" />
+            Enable Protection
+        </label>
+    </div>
+
+    <div id="status">Checking last result...</div>
+    <ul id="sourcesList"></ul>
+
+    <script src="popup.js"></script>
+</body>
+</html>
