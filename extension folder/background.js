@@ -1,5 +1,5 @@
-const GOOGLE_SAFE_BROWSING_API_KEY = 'AIzaSyCbcPqC-7YyU6QkiX7nm7e-ahFWR2WHo68';
-const VIRUSTOTAL_API_KEY = 'c69b78a54e677bd41c4505b0af3dc05d5f7b7efb936c51e86d9249f2b101abda';
+const GOOGLE_SAFE_BROWSING_API_KEY = '';
+const VIRUSTOTAL_API_KEY = '';
 
 let phishTankList = new Set();
 
